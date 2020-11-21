@@ -1,0 +1,234 @@
+@media screen and (min-width: 900px) {
+  .container {
+    padding: 0 3rem;
+  }
+
+  .header {
+    padding-top: 6rem;
+
+    .logo {
+      width: 17%;
+    }
+  }
+
+  .showcase {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+
+  .showcase-content {
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.2rem;
+      width: 50%;
+    }
+  }
+
+  .showcase-image {
+    width: 80%;
+  }
+
+  .statistics {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 19rem;
+
+      .stat_data {
+        font-size: 6rem;
+      }
+
+      .stat_meta {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+    }
+
+    .top::before,
+    .bottom::before {
+      top: -90px;
+    }
+  }
+
+  .cards {
+    margin: 0;
+    padding: 3rem 0;
+    position: relative;
+
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 10rem 0;
+      padding: 2rem 7rem;
+
+      &-content {
+        text-align: left;
+
+        h3 {
+          font-size: 2.1rem;
+          font-weight: 700;
+        }
+      }
+
+      &:nth-child(odd) .card-image {
+        order: 2;
+      }
+
+      &:nth-child(even) .card-content {
+        margin-left: 10rem;
+      }
+
+      &:nth-child(odd) .card-content {
+        margin-right: 10rem;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+
+    .grow-card {
+      margin-top: 13rem;
+      margin-bottom: 14rem;
+      padding-top: 4rem;
+      padding-bottom: 5rem;
+    }
+
+    .grow-card::before {
+      background: url(../images/bg-section-top-desktop-1.svg) no-repeat center;
+      background-size: cover;
+      height: 10rem;
+      top: 7rem;
+    }
+
+    .grow-card::after {
+      background: url(../images/bg-section-bottom-desktop-1.svg) no-repeat
+        center;
+      background-size: cover;
+      height: 10rem;
+      top: 43rem;
+    }
+
+    .flow-card {
+      margin-bottom: 15rem;
+    }
+
+    .user-card {
+      margin-top: 0;
+      margin-bottom: 15rem;
+    }
+
+    .user-card::before {
+      background: url(../images/bg-section-top-desktop-2.svg) no-repeat center;
+      background-size: cover;
+      height: 10rem;
+      top: 96rem;
+
+      @media screen and (max-width: 1300px) {
+        top: 90rem;
+      }
+    }
+
+    .user-card::after {
+      background: url(../images/bg-section-bottom-desktop-2.svg) no-repeat
+        center;
+      background-size: cover;
+      height: 9rem;
+      bottom: 9.5rem;
+    }
+  }
+
+  .community {
+    margin: 0;
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 24rem 3rem 0 3rem;
+    padding-top: 7rem;
+
+    .newsletter {
+      margin: 0 0 0 3rem;
+      order: 2;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin-bottom: 0 0 2rem 0;
+        width: 70%;
+      }
+
+      .form {
+        display: flex;
+        justify-content: flex-start;
+
+        .newsletter_email_box {
+          height: 3rem;
+        }
+
+        .newsletter_email_submit {
+          margin: 0 0 0 2rem;
+          padding: 0rem 2.5rem;
+        }
+      }
+    }
+
+    .footer_content {
+      margin-right: 17.5rem;
+      width: 50%;
+
+      .footer_logo {
+        width: 75%;
+      }
+
+      .contact {
+        margin: 2rem 0 6rem 0;
+      }
+    }
+
+    .social {
+      i {
+        font-size: 2.3rem;
+      }
+
+      li {
+        margin-right: 0.6rem;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      top: -10rem;
+      background: url("../images/bg-footer-top-desktop.svg") no-repeat center;
+      height: 10rem;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+$Pink: hsl(322, 100%, 66%);
+$Light_Pink: hsl(321, 100%, 78%);
+$Light_Red: hsl(0, 100%, 63%);
+$Very_Dark_Cyan: hsl(192, 100%, 9%);
+$Very_Pale_Blue: hsl(207, 100%, 98%);
+
+.primary-btn {
+  background-color: #fff;
+  color: $Pink;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: $Pink $Light_Pink;
+  box-shadow: 0px 1px 11px -3px $Pink;
+  padding: 5px 30px;
+  border-radius: 900px;
+  outline: none;
+  transition: all 0.6s;
+
+  &:hover {
+    color: #fff;
+    background-color: $Pink;
+  }
+}
+
+.secondary-btn {
+  background-color: $Pink;
+  border: none;
+  border-radius: 900px;
+  box-shadow: 1px 1px 9px $Very_Pale_Blue;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 1rem 4rem;
+  outline: none;
+  transition: all 0.6s;
+
+  &:hover {
+    background-color: $Light_Pink;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-size: 1.2rem;
+    padding: 1.7rem 7rem;
+  }
+}
